@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- ЗДЕСЬ МЕНЯЙТЕ НАЗВАНИЕ --> Железная Воля - Кузница</title>
+    <style>
+        /* === ОСНОВНЫЕ ЦВЕТА === */
+        :root {
+            --main-color: #8B0000;  /* Красный - меняйте цвет */
+            --dark-color: #2c3e50;   /* Темный */
+            --gold-color: #D4AF37;   /* Золотой */
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* === ШАПКА === */
+        header {
+            background: var(--dark-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo h1 {
+            color: var(--gold-color);
+            margin: 0;
+        }
+        
+        /* === О МАСТЕРЕ === */
+        .master {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .master-photo {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 20px;
+            background: #eee;
+            border: 3px solid var(--main-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* === ГАЛЕРЕЯ === */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        
+        .product {
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .price {
+            color: var(--main-color);
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        /* === КОНТАКТЫ === */
+        .contacts {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .phone {
+            font-size: 28px;
+            color: var(--gold-color);
+            margin: 20px 0;
+        }
+        
+        /* === КНОПКИ === */
+        .btn {
+            background: var(--main-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header>
+        <div class="logo">
+            <h1><!-- НАЗВАНИЕ КОМПАНИИ --> ЖЕЛЕЗНАЯ ВОЛЯ</h1>
+            <p>Художественная ковка</p>
+        </div>
+    </header>
+    
+    <!-- О МАСТЕРЕ -->
+    <section class="master">
+        <h2>Главный кузнец</h2>
+        <div class="master-photo">
+            <!-- ВСТАВЬТЕ ФОТО МАСТЕРА -->
+            <div style="text-align: center;">
+                <h3>Шарко Владислав Сергеевич</h3>
+                <p>Главный кузнец</p>
+            </div>
+        </div>
+        <p>Более 15 лет опыта в кузнечном деле</p>
+    </section>
+    
+    <!-- ГАЛЕРЕЯ РАБОТ -->
+    <section class="gallery">
+        <h2 style="width: 100%; text-align: center;">Наши работы</h2>
+        
+        <!-- ТОВАР 1 -->
+        <div class="product">
+            <div style="height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                ФОТО ЗАСЛОНКИ
+            </div>
+            <h3>Кованая заслонка</h3>
+            <p>Ручная работа, индивидуальный дизайн</p>
+            <div class="price">700 BYN</div>
+            <a href="#order" class="btn">Заказать</a>
+        </div>
+        
+        <!-- ТОВАР 2 -->
+        <div class="product">
+            <div style="height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                ФОТО СТОЛА
+            </div>
+            <h3>Кованый стол</h3>
+            <p>150x90 см, металл + дерево</p>
+            <div class="price">1800 BYN</div>
+            <a href="#order" class="btn">Заказать</a>
+        </div>
+        
+        <!-- ДОБАВЬТЕ СВОИ ТОВАРЫ ЗДЕСЬ -->
+    </section>
+    
+    <!-- КОНТАКТЫ -->
+    <section class="contacts" id="order">
+        <h2>Контакты</h2>
+        <div class="phone">
+            <!-- ВАШ ТЕЛЕФОН -->
+            +375 (29) 194-65-42
+        </div>
+        <p>Звоните с 9:00 до 18:00</p>
+        <p>г. Минск, ул. Кузнечная, 15</p>
+        
+        <!-- КНОПКА ЗВОНКА -->
+        <a href="tel:+375291946542" class="btn">Позвонить сейчас</a>
+    </section>
+    
+    <!-- ПОДВАЛ -->
+    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
+        <p>© 2024 Железная Воля. Все права защищены.</p>
+    </footer>
+</body>
+</html>
